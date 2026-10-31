@@ -1,0 +1,95 @@
+{
+  "dataset_name": "Krooz/Campus_Recruitment_CSV (Hugging Face)",
+  "algorithm": "Logistic Regression with Standard Scaling",
+  "total_records": 10000,
+  "placed_count": 4197,
+  "not_placed_count": 5803,
+  "placement_rate_pct": 41.97,
+  "features": [
+    "CGPA",
+    "Internships",
+    "Projects",
+    "Workshops/Certifications",
+    "AptitudeTestScore",
+    "SoftSkillsRating",
+    "ExtracurricularActivities_Num",
+    "PlacementTraining_Num",
+    "SSC_Marks",
+    "HSC_Marks"
+  ],
+  "metrics": {
+    "accuracy": 0.807,
+    "precision": 0.7759,
+    "recall": 0.7592,
+    "f1_score": 0.7675,
+    "confusion_matrix": {
+      "tn": 977,
+      "fp": 184,
+      "fn": 202,
+      "tp": 637
+    }
+  },
+  "coefficients": {
+    "CGPA": 0.263,
+    "Internships": 0.0003,
+    "Projects": 0.2137,
+    "Workshops/Certifications": 0.1278,
+    "AptitudeTestScore": 0.5698,
+    "SoftSkillsRating": 0.2883,
+    "ExtracurricularActivities_Num": 0.3448,
+    "PlacementTraining_Num": 0.4016,
+    "SSC_Marks": 0.2994,
+    "HSC_Marks": 0.227
+  },
+  "intercept": -0.614,
+  "feature_summary": {
+    "CGPA": {
+      "min": 6.5,
+      "max": 9.1,
+      "mean": 7.7,
+      "median": 7.7
+    },
+    "Internships": {
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 1.05,
+      "median": 1.0
+    },
+    "Projects": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 2.03,
+      "median": 2.0
+    },
+    "Workshops/Certifications": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 1.01,
+      "median": 1.0
+    },
+    "AptitudeTestScore": {
+      "min": 60.0,
+      "max": 90.0,
+      "mean": 79.45,
+      "median": 80.0
+    },
+    "SoftSkillsRating": {
+      "min": 3.0,
+      "max": 4.8,
+      "mean": 4.32,
+      "median": 4.4
+    },
+    "SSC_Marks": {
+      "min": 55.0,
+      "max": 90.0,
+      "mean": 69.16,
+      "median": 70.0
+    },
+    "HSC_Marks": {
+      "min": 57.0,
+      "max": 88.0,
+      "mean": 74.5,
+      "median": 73.0
+    }
+  }
+}
