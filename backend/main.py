@@ -158,6 +158,19 @@ class ResumeExtractionResponse(BaseModel):
     evidence: Dict[str, str]
     text_preview: str
 
+@app.get("/")
+def root():
+    """
+    Root landing endpoint.
+    """
+    return {
+        "project": "CareerPulse AI – Student Placement Probability Predictor",
+        "status": "online",
+        "documentation": "/docs",
+        "health_check": "/api/health",
+        "frontend": "https://career-pulse-ai-snowy.vercel.app"
+    }
+
 @app.get("/api/health")
 def health_check():
     """
