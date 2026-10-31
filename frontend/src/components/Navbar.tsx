@@ -85,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             ) : (
               <span className="inline-flex items-center gap-1.5 text-amber-700">
                 <AlertCircle className="w-3.5 h-3.5 text-amber-500" />
-                API Offline (Port 8000)
+                API Offline
               </span>
             )}
           </div>

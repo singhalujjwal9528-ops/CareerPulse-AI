@@ -4,7 +4,7 @@ import { Dashboard } from "./components/Dashboard";
 import { Predictor } from "./components/Predictor";
 import { About } from "./components/About";
 import { Footer } from "./components/Footer";
-import { checkHealth, getDatasetStats } from "./services/api";
+import { checkHealth, getDatasetStats, API_BASE_URL } from "./services/api";
 import type { HealthStatus, DatasetStats } from "./types";
 import { AlertCircle, RefreshCw } from "lucide-react";
 
@@ -60,8 +60,7 @@ export function App() {
             <div className="flex items-center gap-2">
               <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
               <span>
-                Backend API is not currently connected at <code>http://127.0.0.1:8000</code>.
-                Make sure to run <code>uvicorn main:app --reload</code> in the <code>backend</code> folder.
+                Backend API is not reachable at <code>{API_BASE_URL}</code>.
               </span>
             </div>
             <button
