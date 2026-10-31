@@ -143,5 +143,4 @@ CareerPulse-AI/
 
 ---
 
-## 📄 License
-This project is developed for academic evaluation purposes.
+
